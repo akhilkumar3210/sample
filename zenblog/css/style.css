@@ -49,5 +49,51 @@
 }
 .i2{
     margin-left: 38%;
-    margin-top: -18.8%;
+    margin-top: -33%;
+    width: 15%;
 }
+.i3{
+    margin-left: 56%;
+    margin-top: -55%;
+    width: 18%;
+}
+.t1{
+    margin-left: 75%;
+    margin-top: -52%;
+    width: 10%;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    
+}
+.person-1{
+    border-radius: 50%;
+    width: 75px;
+    height:75px;
+}
+.i4{
+    margin-left: 25%;
+    margin-top: -12.5%;
+}
+.f1{
+font-style: italic;
+}
+ .main1{
+    margin-top: 17%;
+    margin-left: 15%;
+    width: 20%;
+    
+
+ } 
+.see{
+    margin-left: 325%;
+    margin-top: -20%;
+}
+
+
+
