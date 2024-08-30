@@ -1,0 +1,29 @@
+.a1{
+    display: flexbox;
+    border: 1px solid black;
+    width: 20%;
+    height: 54%;
+    margin-left: 35%;
+    border-radius: 20px;
+    margin-top: 10%;
+    background-color: white;
+}
+.a2{
+    background-color: rgba(240, 209, 37, 0.918);
+}
+.i1{
+    block-size: 5px;
+    padding: 10px;
+    
+}
+.l1{
+    margin-left: 3.5%;
+    width: 17.5%;
+}
+.l2{
+    margin-left: 3.5%;
+    width: 85%;
+}
+.i2{
+    margin-top: 13%;
+}
