@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+.solarsystem{
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+.sun{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.planet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+.planetinner{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 38, 255);
+    border-radius: 50%;
+}
+.planetorbit1{
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #aaa;
+    border-radius: 50%;
+    animation:rotate 10s linear infinite;
+    margin-left: -26.5%;
+    margin-top: -24%;
+}
+.planetorbit2{
+    width: 150px;
+    height: 150px;
+    border: 1px dashed #aaa;
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+    margin-left: -40%;
+    margin-top: -62%;
+}
+.planetinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%,0%);
+}
+.planetorbit3{
+    width: 200px;
+    height: 200px;
+    border: 1px dashed #aaa;
+    border-radius: 50%;
+    animation: rotate 30s linear infinite;
+    margin-left: -51.5%;
+    margin-top: -90%;
+}
+.planetinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%,0%);
+
+
+}
+@keyframes rotate { 
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
