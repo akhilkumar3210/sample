@@ -31,9 +31,31 @@
 
 .location {
     margin-left: 38%;
-    margin-top: 0.5%;
+    display: inline;
 }
 
 .arrow {
-    margin-top: -20000%;
+    margin-top: 2%;
+}
+
+.signup {
+    margin-top: 1.4%;
+    margin-left: 2%;
+}
+
+.btn1 {
+    background-color: rgb(238, 76, 76);
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+.menu {
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+
+.line{
+    display: flex;
 }
