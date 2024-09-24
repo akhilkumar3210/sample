@@ -1,4 +1,8 @@
-def twosum(num,target):
-    num=[2,7,11,15]
-    target=9
-    num=num[0]+num[1]==9
+num=[2,7,5,4]
+target=9
+for i in num():
+    if num[i]+num[i+1]== 9:
+        print("")
+    else:
+        print("list",num)
+        print(t)
