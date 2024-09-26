@@ -106,10 +106,45 @@ ul.navitem1 li {
     padding: 10px;
     color: black;
 }
-.carousel-container{
+
+.carousel-container {
     background-color: whitesmoke;
-    left: 294px;
-    width: 100%;
-    margin-top: -1.7%;
+    max-width: 100%;
+    height: 300px;
+    margin-top: 10px;
     position: relative;
+    overflow-x: hidden;
 }
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.carousel-items{
+position: relative;
+border-radius: 5px;
+width: 100%;
+height: 100%;
+
+}
+
+ /* .slider {
+    margin-right: 10px;
+    position: relative;
+    border-radius: 5px;
+    width: 200%;
+    height: 100%;
+    transition: 1s;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+     
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;   
+}  */
