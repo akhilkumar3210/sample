@@ -188,8 +188,8 @@ height: 100%;
 .card {
     position: relative;
     width: 225px;
-    height: 400px;
-    border-radius: 10px;
+    height: 370px;
+    border-radius: 50px;
 
 }
 
@@ -197,7 +197,6 @@ height: 100%;
     width: 100%;
     height: 35px;
     position: absolute;
-    bottom: 0;
     background: #000;
     padding: 10px;
     display: flex;
@@ -214,4 +213,77 @@ height: 100%;
 .movie h3 {
     padding-top: 10px;
     font-size: 18px;
+}
+
+.strip {
+    padding-left: 290px;
+    height: 10px;
+    padding-top: 50px;
+
+}
+
+.title-enter {
+    color: black;
+    opacity: 0.9;
+    padding-left: 290px;
+    padding-top: 200px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.enter-list {
+    width: 94%;
+    height: 250px;
+    position: relative;
+    padding-top: 0;
+    padding-left: 290px;
+    padding-top: 15px;
+}
+
+.enter-container {
+    position: relative;
+    width: 95%;
+    padding-left: 10px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.enter-container .card {
+    position: relative;
+    min-width: 225px;
+    width: 225px;
+    height: 225px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.title-enter1 {
+    color: black;
+    opacity: 0.9;
+    padding-top: 50px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.studio {
+
+    padding-left: 290px;
+    padding-top: 120px;
+}
+
+.music-list {
+    position: relative;
+    width: 95%;
+    padding-left: 10px;
+    display: flex;
+}
+
+.music-list .card{
+    position: relative;
+    padding-right: 30px;
+
 }
