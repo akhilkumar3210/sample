@@ -1,7 +1,7 @@
 .topnav {
     display: flex;
     width: 100%;
-    margin-left: 16%;
+    padding-left: 290px;
 }
 
 .search {
@@ -30,7 +30,7 @@
 }
 
 .location {
-    margin-left: 38%;
+    margin-left: 780px;
     display: inline;
 }
 
@@ -136,6 +136,7 @@ height: 100%;
 
 .carousel-inner {
     margin-right: 10px;
+    margin-left: 10px;
     position: relative;
     border-radius: 5px;
     width: 200%;
@@ -367,6 +368,7 @@ height: 100%;
 
 .hut {
     display: inline;
+
 }
 
 .lt {
@@ -416,5 +418,5 @@ height: 100%;
     width: 100%;
     position: relative;
     height: 100%;
-    margin-left: -22%;
+    margin-left: -20%;
 }
