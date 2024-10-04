@@ -1,4 +1,4 @@
-user=[{'id':100, 'name': 'akhil', 'email': 'ak24152@gmail.com', 'mobno': 84743846346, 'password': 'akhil'}]
+user=[]
 book=[]
 while True :
     print(''' 
@@ -13,12 +13,12 @@ while True :
         else:
             id=user[-1]['id']+1
             print(id)
-            name=input("Enter  Name : ")
-            email=input("Enter  Email ID :")
-            mobno=int(input("Enter Mobile No : "))
-            password=input("Enter Password : ")
-            user.append({'id':id,'name':name,'email':email,'mobno':mobno,'password':password})
-            # print(user)
+        name=input("Enter  Name : ")
+        email=input("Enter  Email ID :")
+        mobno=int(input("Enter Mobile No : "))
+        password=input("Enter Password : ")
+        user.append({'id':id,'name':name,'email':email,'mobno':mobno,'password':password,'book':[]})
+        # print(user)
     elif choice == 2:
         username=input("Enter UserName :")
         password=input("Enter Password : ")
@@ -38,12 +38,12 @@ while True :
                 choice=int(input("Enter a Choice(1/2/3/4/5/6) : "))
                 if choice == 1:
                     if len(book)==0:
-                            id=100
+                            id=1000
                     else:
                         id=book[-1]['id']+1
                         print(id)
                     name=input("Enter  Name : ")
-                    stock=input("Enter  stock :")
+                    stock=int(input("Enter  stock :"))
                     price=int(input("Enter price : "))
                     book.append({'id':id,'name':name,'stock':stock,'price':price})
                     # print(book)
@@ -68,10 +68,10 @@ while True :
                     if f1==0:
                         print("Book Is Not Available")
                 elif choice==4:
-                    print('{:<8}{:<20}{:<30}{:<15}'.format('name','Stock ','Price'))
+                    print('{:<10}{:<20}{:<30}{:40}'.format('Id','name','Stock ','Price'))
                     print('_'*100)
                     for i in book:
-                        print('{:<8}{:<20}{:<30}{:<15}'.format(i['name'],i['stock'],i['price']))
+                        print('{:<10}{:<20}{:<30}{:<40}'.format(i['id'],i['name'],i['stock'],i['price']))
                 elif choice==5:
                     print('{:<8}{:<20}{:<30}{:<15}'.format('ID','Name','Email ID','Mobno'))
                     print('_'*100)
@@ -87,6 +87,51 @@ while True :
                 if i['id']==username and i['password']==password:
                     print("User Login!!!!")
                     f=2
+                    while True:
+                        print('''
+                               1.View Books
+                               2.Lend Books
+                               3.Return Books
+                               4.Books In Hands
+                               5.Logout!!!     
+                                        ''')
+                        choice=int(input("Enter a Choice(1/2/3/4/5) : "))
+                        if choice== 1:
+                             print('{:<10}{:<20}{:<30}{:<40}'.format('Id','name','Stock ','Price'))
+                             print('_'*100)
+                             for j in book:
+                                 print('{:<10}{:<20}{:<30}{:<40}'.format(j['id'],j['name'],j['stock'],j['price']))
+                        elif choice== 2:
+                            id=int(input("Enter a ID : "))
+                            f1=0
+                            for j in book:
+                                if j['id']==id:
+                                    f1=1
+                                    if j['stock']>0:
+                                        i['book'].append(id)
+                                        j['stock']-=1
+                                    else:
+                                        print("Out Of Stock")
+                            if f1==0:
+                                print("Book is not Avilable")
+                        elif choice== 3:
+                            id=int(input("Enter a Id : "))
+                            f1=0
+                            for j in book:
+                                if j['id']==id and id in i['book']:
+                                    f1=1
+                                    j['stock']+=1
+                                    i['book'].remove(id)
+                            if f1==0:
+                                print("Book Is Not Avilable")
+                        elif choice== 4:
+                            if len(i['book'])==0:
+                                print("No Books")
+                            else:
+                                print(i['book'])
+                        elif choice== 5:
+                            print("Existing>>>>>>>>>>")
+                            break
             if f==0:
                 print("Invaild Username Or Password !#$")
     elif choice == 3:
