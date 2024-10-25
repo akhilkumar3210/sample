@@ -1,3 +1,3 @@
 import re
 a=input("Enter a Password : ")
-print(re.search('[a-z].{7}[A-Z].{1}',a))
+print(re.search('^[A-Z].{1}.*[a-z].{7}',a))
