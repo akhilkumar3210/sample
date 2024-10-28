@@ -29,8 +29,11 @@ except:
 # for i in data:
 #     print('{:<10}{:<20}{:<30}'.format(i[0],i[1],i[2]))
 
-name=input("Enter new name :")
-age=int(input("Enter a age : "))
-name1=input("Enter a  old Name : ")
-con.execute("update user set name=?,age=? where name=? ",(name,age,name1))
+# name=input("Enter new name :")
+# age=int(input("Enter a age : "))
+# name1=input("Enter a  old Name : ")
+# con.execute("update user set name=?,age=? where name=? ",(name,age,name1))
+# con.commit()
+no=int(input("Entet a Number : "))
+con.execute("delete from user where no=?",(no,))
 con.commit()
