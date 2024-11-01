@@ -7,6 +7,7 @@ win.maxsize(800,800)
 
 def submit():
     print(e1.get())
+    l3.config(text=e1.get())
     f=open("demo3",'a')
     f.write(e1.get())
     if var1.get()==1:

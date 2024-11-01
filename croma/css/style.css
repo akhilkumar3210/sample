@@ -1,8 +1,66 @@
-.main{
-    background-image: url("1-Diwali_Option-Without_Content_xiiklf.gif");
+.main {
+    position: relative;
+    width: 100%;
 }
 
-.navbar{
+.navbar {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    height: 90px;
+} 
+
+.nav-item {
+    color: white;
+}
+
+.forward {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main1{
+    background-color: black;
+}
+
+.search {
+    display: flex;
+}
+
+.main2{
+    background-color: rgb(22, 21, 21);
+}
+
+.d-block {
+    width: 120px;
+    height: 120px;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 5%;
+}
+
+.caro {
+height: 150px;
+  position: relative;
+  top: 30px;
+}
+
+.poster{
+    background-color:rgb(22, 21, 21) ;
+}
+.ps{
+    background-color: rgb(22, 21, 21);
+    display: flex;
+    justify-content: space-between;
     width: 80%;
     margin: auto;
 }
+.ps1{
+    border-radius: 50%;
+}
+
