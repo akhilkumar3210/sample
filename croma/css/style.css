@@ -52,15 +52,73 @@ height: 150px;
 
 .poster{
     background-color:rgb(22, 21, 21) ;
+    margin-bottom: 60px;
+    margin-top: 30px;
 }
 .ps{
     background-color: rgb(22, 21, 21);
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
-.ps1{
-    border-radius: 50%;
+.pss{
+    border-radius: 10px;
+    position: relative;
+}
+.tp{
+    width: 85%;
+    margin: auto  ;
+    color: white;
 }
 
+.pss3{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tp1{
+    width: 85%;
+    margin: auto;
+    color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tp2{
+    width: 85%;
+    margin: auto;
+    color: white;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.l1{
+    border-radius: 10PX;
+}
+
+.ps6{
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.tp3{
+    width: 85%;
+    margin: auto;
+    color: white;
+}
